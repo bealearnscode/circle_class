@@ -36,7 +36,7 @@ class Circles
         Circles (int x, int y);
         
         // Center and radius constructor
-        Circles (float r, int x, int y);
+        //Circles (float r, int x, int y);
        
          // Destructor
         ~Circles();
@@ -50,17 +50,24 @@ const double PI = 3.14;
 
 int main()
 {
-  Circles sphere1(8);
+  Circles sphere1(2);
   sphere1.printCircleStats();
   cout << "The area of the circle is " << sphere1.findArea() << endl;
   cout << "The circumference of the circle is " << sphere1.findCircumference() << endl;
   
+  cout << endl;
   
-  Circles sphere2
-  sphere.setCenter(9,10);
-  sphere.printCircleStats();
+  Circles sphere2;
+  sphere2.printCircleStats();
   cout << "The area of the circle is " << sphere2.findArea() << endl;
   cout << "The circumference of the circle is " << sphere2.findCircumference() << endl;
+  
+  cout << endl;
+  
+  Circles sphere3(15, 16);
+  sphere3.printCircleStats();
+  cout << "The area of the circle is " << sphere3.findArea() << endl;
+  cout << "The circumference of the circle is " << sphere3.findCircumference() << endl;
 
   return 0;
 }
